@@ -1,0 +1,86 @@
+/* importing Open Sans Font Family */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #C8DBED;
+    line-height: 1.61;
+}
+
+body {
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    margin: 20px;
+    color: #7087A4;
+    line-height: 1;
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0 0 .5rem 0;
+    line-height: 1;
+}
+
+main {
+    display: flex;
+}
+
+article {
+    width: 60%;
+    padding: 20px 55px 20px 20px;
+    background-color: #fff;
+    margin: 0 0 0 20px;
+}
+
+article p {
+    text-align: justify;
+}
+
+article img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+aside {
+    width: 40%;
+    color: #fff;
+    line-height: 1.2rem;
+    margin: 45px 20px 0 -50px;
+}
+
+aside h2 {
+    letter-spacing: 1px;
+}
+
+aside img {
+    width: 100%;
+    margin: 0 15px 5px 0;
+}
+
+aside p {
+    text-align: justify;
+    margin: 0 0 40px 0;
+    font-size: 1rem;
+}
+
+aside a, aside a:visited {
+    text-decoration: none;
+    display: block;
+    color: #C8DBED;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+aside > div {
+    background-color: #243754;
+    padding: 20px 20px 1px 20px;
+    transform: perspective(1500px) rotateY(-25deg);
+}
