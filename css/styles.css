@@ -1,0 +1,133 @@
+ /* General Styles */
+
+ /* importing Open Sans Font Family */
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+ body {
+     font-size: 13px;
+     font-family: 'Open Sans', sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+
+ h1 {
+     font-size: 3em;
+     margin: 20px 0 0 0;
+ }
+
+ p {
+     margin: 0 0 10px 0;
+ }
+
+ footer {
+     text-align: center;
+     margin: 20px;
+     color: #bbb;
+ }
+
+ footer a {
+     color: #000;
+     text-decoration: none;
+ }
+
+ footer a:hover {
+     text-decoration: underline;
+ }
+
+ /* Article Section in index */
+
+ article {
+     text-align: center;
+ }
+
+ section {
+     margin: 30px 0 0 0;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     border-top: 1px solid #bbb;
+     padding: 20px;
+     background-color: #ddd;
+ }
+
+ section > a {
+     display: block;
+     text-decoration: none;
+     font-size: 1em;
+     color: #999;
+     width: 26%;
+     margin: 0 10px 20px 20px;
+     line-height: 1.2em;
+     border: 1px solid #eee;
+     padding: 0 5px 5px 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+     overflow: hidden;
+     background-color: #fff;
+     transition: background-color .5s, color .5s, border-color .5s;
+ }
+
+ section > a img {
+     width: 110%;
+     display: block;
+     margin: 0 -5px 10px -5px;
+ }
+
+ section > a:hover {
+     background-color: #eee;
+     color: #000;
+     border-color: #fff;
+ }
+
+ label {
+     display: inline-block;
+     cursor: pointer;
+     padding: 2px 20px;
+     border: 1px solid #ccc;
+     color: #aaa;
+ }
+
+ input {
+     display: none;
+ }
+
+ @media screen and (max-width: 500px) {
+     section > a {
+         width: 38%;
+     }
+ }
+
+ /* Filtering articles using CSS */
+
+ input#all:checked ~ label[for="all"],
+ input#design:checked ~ label[for="design"],
+ input#animations:checked ~ label[for="animations"],
+ input#transitions:checked ~ label[for="transitions"]
+ {
+     color: #000;
+     background-color: #eee;
+     border-color: #000;
+ }
+
+ input#design:checked ~ section a[data-skill~="design"] {
+     display: block;
+ }
+
+ input#design:checked ~ section a:not([data-skill~="design"]) {
+     display: none;
+ }
+
+ input#animations:checked ~ section a[data-skill~="animations"] {
+     display: block;
+ }
+
+ input#animations:checked ~ section a:not([data-skill~="animations"]) {
+     display: none;
+ }
+
+ input#transitions:checked ~ section a[data-skill~="transitions"] {
+     display: block;
+ }
+
+ input#transitions:checked ~ section a:not([data-skill~="transitions"]) {
+     display: none;
+ }
